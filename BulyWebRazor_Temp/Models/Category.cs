@@ -9,6 +9,7 @@ namespace BulyWebRazor_Temp.Models
         public int Id { get; set; }
         [Required]
         [MaxLength(30)]
+        [DisplayName("Category Name")]
         public string Name { get; set; }
         [DisplayName("Display Order")]
         [Range(1, 100, ErrorMessage = "Insert a valeu between 1 and 100")]
