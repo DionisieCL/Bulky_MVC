@@ -1,6 +1,8 @@
-using BulkyWeb.Data;
+
 using Microsoft.Extensions.Options;
 using Microsoft.EntityFrameworkCore;
+using Bulky.DataAcess.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
