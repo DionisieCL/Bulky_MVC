@@ -22,7 +22,8 @@ namespace BulyWebRazor_Temp.Pages.Categories
         public IActionResult OnPost()
         {
             _db.Categories.Add(CategoryList);
-            _db.SaveChanges(); 
+            _db.SaveChanges();
+            TempData["Success"] = "Category created successfully";
             return RedirectToPage("Index");
         }
     }

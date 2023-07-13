@@ -32,7 +32,7 @@ namespace BulyWebRazor_Temp.Pages.Categories
 
                 _db.Categories.Update(CategoryList);
                 _db.SaveChanges();               //Writes in Db
-                //TempData["Success"] = "Category updated successfully";
+                TempData["Success"] = "Category updated successfully";
                 return RedirectToPage("Index");
             }
             return Page();
